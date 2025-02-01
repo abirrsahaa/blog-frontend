@@ -19,7 +19,7 @@ const Dashboard = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        "http://abirr.me:4000/api/v1/upload/getallDetails",
+        "https://blogit.webacing.tech/api/v1/upload/getallDetails",
         {
           method: "GET",
           headers: {
@@ -39,7 +39,7 @@ const Dashboard = () => {
   useEffect(() => {
     async function abir() {
       const response = await fetch(
-        "http://abirr.me:4000/api/v1/upload/getuser",
+        "https://blogit.webacing.tech/api/v1/upload/getuser",
         {
           method: "GET",
           headers: {

@@ -9,7 +9,7 @@ const Posting = async (title, content, imageFile, tags, token) => {
     formData.append("tags", tags);
 
     const response = await axios.post(
-      "http://abirr.me:4000/api/v1/upload/imageUpload",
+      "https://blogit.webacing.tech/api/v1/upload/imageUpload",
       formData,
       {
         headers: {

@@ -20,7 +20,7 @@ const Signup = () => {
       formData.append("password", password);
 
       const response = await axios.post(
-        "http://abirr.me:4000/api/v1/signup",
+        "https://blogit.webacing.tech/api/v1/signup",
         formData
       );
 
