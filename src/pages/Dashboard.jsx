@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MdPostAdd } from "react-icons/md";
 import { HiMiniViewfinderCircle } from "react-icons/hi2";
 import { useSelector } from "react-redux";
@@ -19,7 +19,7 @@ const Dashboard = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        "http://localhost:4000/api/v1/upload/getallDetails",
+        "http://abirr.me:4000/api/v1/upload/getallDetails",
         {
           method: "GET",
           headers: {
@@ -39,7 +39,7 @@ const Dashboard = () => {
   useEffect(() => {
     async function abir() {
       const response = await fetch(
-        "http://localhost:4000/api/v1/upload/getuser",
+        "http://abirr.me:4000/api/v1/upload/getuser",
         {
           method: "GET",
           headers: {
